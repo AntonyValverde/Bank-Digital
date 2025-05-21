@@ -1,0 +1,70 @@
+.estado-container {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.4s ease-in;
+}
+
+.estado-container h2 {
+  color: #243b55;
+  margin-bottom: 1rem;
+}
+
+.monto-card {
+  background-color: #243b55;
+  color: white;
+  padding: 1.2rem;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.movimientos-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.movimientos-list li {
+  background-color: #fff;
+  border-left: 4px solid #2a5298;
+  margin-bottom: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.movimientos-list li:hover {
+  background-color: #eef3f9;
+}
+
+.movimientos-list li strong {
+  display: block;
+  color: #1e3c72;
+  margin-bottom: 0.3rem;
+}
+
+.movimientos-list li span {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .monto-card {
+    font-size: 1rem;
+  }
+}

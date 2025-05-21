@@ -1,0 +1,66 @@
+.sinpe-container {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: auto;
+  animation: fadeIn 0.4s ease-in;
+}
+
+.sinpe-container h2 {
+  text-align: center;
+  color: #243b55;
+  margin-bottom: 1.5rem;
+}
+
+.sinpe-container input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.sinpe-container input:focus {
+  border-color: #2a5298;
+  box-shadow: 0 0 5px rgba(42, 82, 152, 0.4);
+  outline: none;
+}
+
+.sinpe-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2a5298;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sinpe-container button:hover {
+  background-color: #1e3c72;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .sinpe-container {
+    padding: 1.5rem;
+  }
+}
